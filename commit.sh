@@ -7,6 +7,7 @@ then
 	bash view.sh private
 	echo "Pulling Commits To Private"
 	git merge --no-ff public
+	git status
 	bash view.sh public
 elif [[ "$1" == "private" ]]
 then
